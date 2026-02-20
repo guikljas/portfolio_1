@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Página Pessoal</title>
+
+  
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+
+ 
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+  
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      font-family: 'Poppins', sans-serif;
+      background-color: #0f0f0f;
+      color: white;
+    }
+
+    header {
+      width: 100%;
+      height: 100vh;
+      position: relative;
+      overflow: hidden;
+    }
+
+    header img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.65);
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      text-align: left;
+      padding: 50px 60px;
+    }
+
+    .titulo {
+      font-size: 3rem;
+      font-weight: 800;
+      animation: fadeIn 1.5s ease-in-out;
+      margin-bottom: 30px;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+      text-align: center;
+    }
+
+    .descricao {
+      font-size: 1,5rem;
+      font-weight: 400;
+      max-width: 1000px;
+      line-height: 2.3;
+      animation: fadeIn 2s ease-in-out;
+      text-shadow: 1px 1px 6px rgba(0,0,0,0.4);
+    }
+
+    .descricao p {
+      margin-bottom: 30px;
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    footer {
+      width: 100%;
+      background: linear-gradient(to top, #111, transparent);
+      padding: 40px 0;
+      text-align: center;
+    }
+
+    .footer-content {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .footer-content a {
+      color: #fff;
+      font-size: 1.2rem;
+      font-weight: 300;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      transition: color 0.3s ease;
+    }
+
+    .footer-content a:hover {
+      color: #1e90ff;
+    }
+
+    .footer-content svg {
+      width: 24px;
+      height: 24px;
+    }
+  </style>
+</head>
+<body>
+    <header id="topo">
+        <img src="img/to-do list.jpeg" alt="Imagem de fundo">
+        <div class="overlay">
+          <h1 class="titulo">To-Do List Interativa em JavaScript</h1>
+          <div class="descricao">
+            <p>Este projeto foi desenvolvido para criar uma lista de tarefas interativa utilizando apenas JavaScript. A ideia surgiu da necessidade de organizar melhor minhas atividades diárias e praticar conceitos fundamentais da linguagem, como manipulação do DOM, eventos e armazenamento local com <code>localStorage</code>.</p>
+      
+            <p>Ao longo do desenvolvimento, implementei funcionalidades como adicionar, remover, marcar tarefas como concluídas e manter os dados salvos mesmo após fechar o navegador. O visual foi mantido simples e objetivo, com foco na usabilidade e clareza.</p>
+      
+            <p>Esse projeto foi uma ótima oportunidade para colocar em prática os conhecimentos adquiridos e entender na prática como o JavaScript pode tornar uma aplicação web dinâmica e funcional. Com o tempo, pretendo evoluí-lo ainda mais, adicionando categorias, filtros e integração com banco de dados.</p>
+      
+            <p>Além de ser uma ferramenta útil para o dia a dia, este projeto também representa meu compromisso com a melhoria contínua e meu entusiasmo em transformar ideias em soluções práticas por meio da programação.</p>
+          </div>
+        </div>
+      </header>      
+
+  <footer>
+    <div class="footer-content">
+      <a href="index.html">
+        <i data-lucide="folder-open"></i>
+        Voltar para o início
+      </a>
+      <a href="https://github.com/guikljas" target="_blank" class="btn btn-dark me-2">
+    GitHub
+   <i class="fa-brands fa-github"></i>
+
+  </a>
+
+  <a href="https://www.linkedin.com/in/guilherme-leite-2957b83a7" target="_blank" class="btn btn-dark me-2">
+    LinkedIn
+    <i class="fa-brands fa-linkedin"></i>
+  </a>
+  
+  <a href="https://www.instagram.com/guikjdj/" target="_blank" class="btn btn-dark me-2">
+    Instagram
+    <i class="fa-brands fa-instagram"></i>
+  </a>
+    </div>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
